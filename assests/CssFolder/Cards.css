@@ -1,0 +1,70 @@
+/* css to design the view of each song */
+
+.col12{
+    text-decoration: none;
+    text-align: center;    
+    background-color: white;
+    border: solid #737373 3px;
+    border-radius: 10px;
+    margin: 0px 3px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+}
+.col12:hover {
+    box-shadow: none;
+    transform: scale(0.99);
+}
+
+#img-container
+{
+    height: 80px;
+    width: 150px;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+#songname
+{
+    font-size: 20px;
+    font-family: 'Righteous',cursive;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    display: block;
+    word-wrap: break-word;
+    margin: 4px;
+}
+#singername
+{
+    font-size: 20px;
+    font-family: emoji;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    display: block;
+    word-wrap: break-word;
+    margin: 4px;
+    color: #d31212;
+    background-color: #eaecee;
+    border-radius: 50%;
+}
+#type
+{
+    font-size: 20px;
+    font-family: 'Righteous',cursive;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    display: block;
+    word-wrap: break-word;
+    margin: 4px;
+}
+#year
+{
+    font-size: 20px;
+    font-family: 'Righteous',cursive;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    display: block;
+    word-wrap: break-word;
+    margin: 4px;
+}

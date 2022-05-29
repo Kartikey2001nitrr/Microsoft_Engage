@@ -1,0 +1,33 @@
+/* css to design header of all pages */
+
+.btncat
+{
+    color: #737373;
+    background-color: #f8f9fa;
+    border: solid transparent 2px;
+}
+.btncat:hover
+{
+    background-color: #f8f9fa;
+    border: solid transparent 2px;
+    border-bottom: #737373 2px solid;
+}
+.btncat::after
+{
+    color: #737373;
+    background-color: #f8f9fa;
+    border: solid transparent 2px;
+}
+
+.navlinks
+{
+    color: #737373;
+    background-color: #f8f9fa;
+
+}
+header a:hover
+{
+    background-color: #f8f9fa;
+    border: solid transparent 2px;
+    border-bottom: #737373 2px solid;
+}

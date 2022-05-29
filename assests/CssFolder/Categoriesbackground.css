@@ -1,0 +1,25 @@
+/* css to design background of categories */
+
+#backgroundCat {
+    padding: 1em;
+    height: auto;
+    width: 100vw;
+    background-image: url("https://wallpapertag.com/wallpaper/full/e/0/3/802535-beautiful-horror-movie-wallpapers-2560x1440-hd.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#title
+{
+    color: white;
+    font-size: 2rem;
+    font-family: 'Koulen', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Righteous', cursive;
+}
+
+
+.tilesparent
+{
+    margin: 5px;
+}

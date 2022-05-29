@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CssFolder/homebackground.css">
+    <link rel="stylesheet" href="../CssFolder/Cards.css">
+    <link rel="stylesheet" href="../CssFolder/search.css">
+    <link rel="stylesheet" href="../CssFolder/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Koulen&family=Pacifico&family=Righteous&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <script src="../JavaScriptFolder/search.js"></script>
+
+    <title>Microsoft</title>
+
+
+</head>
+
+<body class="bg-white">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img
+                        src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31"
+                        class="img-fluid" alt="microsoft logo" style="transform: scale(0.7);"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link navlinks" href="/home"><span class="navlinks">Home</span></a>
+                        </li>
+                        <li class="nav-item">
+                             <!-- dropdown list -->
+
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle btncat " type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="navlinks">Categories</span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="/Categories/Hits">Hits</a></li>
+                                    <li><a class="dropdown-item" href="/Categories/Romance">Romance</a></li>
+                                    <li><a class="dropdown-item" href="/Categories/Energy">Energy</a></li>
+                                    <li><a class="dropdown-item" href="/Categories/Party">Party</a></li>
+                                    <li><a class="dropdown-item" href="/Categories/Sad">Sad</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        <!-- Sign out -->
+
+                        <nav class="navbar navbar-light bg-light">
+                            <div class="container-fluid">
+                                <a href="/"><button class="btn btn-outline-success" type="submit">Sign Out</button></a>
+                            </div>
+                        </nav>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="background1">
+
+        <div class="container">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <a href="/moviepage/<%= Sort_list1[0].Serial_No%>">
+                            <img src="https://source.unsplash.com/random/'+100+'x'+200+'" class="d-block w-100"
+                                alt="Mirzapur" style="height: 600px; width:auto;">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>
+                                    <%= Sort_list1[0].Song_Name%>
+                                </h5>
+                                <p>
+                                    <%= Sort_list1[0].Singer_Name%>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="/moviepage/<%= Sort_list1[1].Serial_No%>">
+                            <img src="https://source.unsplash.com/random/'+100+'x'+200+'" class="d-block w-100"
+                                alt="sacared games" style="height: 600px; width:auto;">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>
+                                    <%= Sort_list1[1].Song_Name%>
+                                </h5>
+                                <p>
+                                    <%= Sort_list1[1].Singer_Name%>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="/moviepage/<%= Sort_list1[2].Serial_No%>">
+                            <img src="https://source.unsplash.com/random/'+100+'x'+200+'" class="d-block w-100"
+                                alt="loki" style="height: 600px; width:auto;">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>
+                                    <%= Sort_list1[2].Song_Name%>
+                                </h5>
+                                <p>
+                                    <%= Sort_list1[2].Singer_Name%>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="bg-white m-3">
+            <div class="row m-3">
+                <header class="p-1 titles">Resent</header>
+                <div class="scroll">
+                    <div class="movies">
+                        <div class="row">
+                            <% for(var i=0;i<=9;i++) {%>
+                                <% var a='Resent' +i %>
+                                    <% if(Resents[a]==(-1))
+                                    {
+                                        continue;
+                                    }%>
+                                    <%var j=Resents[a]%>
+                                        <a href="/moviepage/<%= song_list[j].Serial_No%>" class="col12">
+                                            <div id="img-container">
+                                                <img src="https://source.unsplash.com/random/'+width+'x'+height+'"
+                                                    style="height: 100%; width:auto">
+                                            </div>
+                                            <p id="songname">
+                                                <%= song_list[j].Song_Name%>
+                                            </p>
+                                            <p id="singername">
+                                                <%= song_list[j].Singer_Name%>
+                                            </p>
+                                            <p id="type">
+                                                <%= song_list[j].Type%>
+                                            </p>
+                                            <p id="year">
+                                                <%= song_list[j].Year%>
+                                            </p>
+                                        </a>
+                                        <%}%>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-light m-3">
+            <div class="row m-3">
+                <header class="p-1 titles">
+                    Trending
+                </header>
+                <div class="scroll">
+                    <div class="movies">
+                        <div class="row">
+                            <% for (var i=0;i<=16;i++) { %>
+                                <a href="/moviepage/<%= Sort_list1[i].Serial_No%>" class="col12">
+                                    <div id="img-container">
+                                        <img src="https://source.unsplash.com/random/'+width+'x'+height+'"
+                                            style="height: 100%; width:auto">
+                                    </div>
+                                    <p id="songname">
+                                        <%= Sort_list1[i].Song_Name%>
+                                    </p>
+                                    <p id="singername">
+                                        <%= Sort_list1[i].Singer_Name%>
+                                    </p>
+                                    <p id="type">
+                                        <%= Sort_list1[i].Type%>
+                                    </p>
+                                    <p id="year">
+                                        <%= Sort_list1[i].Year%>
+                                    </p>
+                                </a>
+                                <% } %>
+
+
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white m-3">
+            <div class="row m-3">
+                <header class="p-1 titles ">New Songs</header>
+                <div class="scroll">
+                    <div class="movies">
+                        <div class="row">
+                            <% for (let i of song_list) { %>
+                                <a href="/moviepage/<%= i.Serial_No%>" class="col12">
+                                    <div id="img-container">
+                                        <img src="https://source.unsplash.com/random/'+width+'x'+height+'"
+                                            style="height: 100%; width:auto">
+                                    </div>
+                                    <p id="songname">
+                                        <%= i.Song_Name%>
+                                    </p>
+                                    <p id="singername">
+                                        <%= i.Singer_Name%>
+                                    </p>
+                                    <p id="type">
+                                        <%= i.Type%>
+                                    </p>
+                                    <p id="year">
+                                        <%= i.Year%>
+                                    </p>
+                                </a>
+                                <% } %>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-light m-3">
+            <div class="row m-3">
+                <header class="p-1 titles">Songs you may like</header>
+                <div class="scroll">
+                    <div class="movies">
+                        <div class="row">
+                            <% for (var j of recommendation) { %>
+                                <a href="/moviepage/<%= song_list[j].Serial_No%>" class="col12">
+                                    <div id="img-container">
+                                        <img src="https://source.unsplash.com/random/'+width+'x'+height+'"
+                                            style="height: 100%; width:auto">
+                                    </div>
+                                    <p id="songname">
+                                        <%= song_list[j].Song_Name%>
+                                    </p>
+                                    <p id="singername">
+                                        <%= song_list[j].Singer_Name%>
+                                    </p>
+                                    <p id="type">
+                                        <%= song_list[j].Type%>
+                                    </p>
+                                    <p id="year">
+                                        <%= song_list[j].Year%>
+                                    </p>
+                                </a>
+                                <% } %>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white m-3">
+            <div class="row m-3">
+                <a href="/Categories/Hits">
+                    <header class="p-1 titles">Hits (Trending)</header>
+                </a>
+                <div class="scroll">
+                    <div class="movies">
+                        <div class="row">
+                            <% for (var i=0;i<=16;i++) { %>
+                                <a href="/moviepage/<%= Sort_list2[i].Serial_No%>" class="col12">
+                                    <div id="img-container">
+                                        <img src="https://source.unsplash.com/random/'+width+'x'+height+'"
+                                            style="height: 100%; width:auto">
+                                    </div>
+                                    <p id="songname">
+                                        <%= Sort_list2[i].Song_Name%>
+                                    </p>
+                                    <p id="singername">
+                                        <%= Sort_list2[i].Singer_Name%>
+                                    </p>
+                                    <p id="type">
+                                        <%= Sort_list2[i].Type%>
+                                    </p>
+                                    <p id="year">
+                                        <%= Sort_list2[i].Year%>
+                                    </p>
+                                </a>
+                                <% } %>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-light m-3">
+            <div class="row m-3">
+                <a href="/Categories/Romance">
+                    <header class="p-1 titles">Romance (Trending)</header>
+                </a>
+                <div class="scroll">
+                    <div class="movies">
+                        <div class="row">
+                            <% for (var i=0;i<=16;i++) { %>
+                                <a href="/moviepage/<%= Sort_list3[i].Serial_No%>" class="col12">
+                                    <div id="img-container">
+                                        <img src="https://source.unsplash.com/random/'+width+'x'+height+'"
+                                            style="height: 100%; width:auto">
+                                    </div>
+                                    <p id="songname">
+                                        <%= Sort_list3[i].Song_Name%>
+                                    </p>
+                                    <p id="singername">
+                                        <%= Sort_list3[i].Singer_Name%>
+                                    </p>
+                                    <p id="type">
+                                        <%= Sort_list3[i].Type%>
+                                    </p>
+                                    <p id="year">
+                                        <%= Sort_list3[i].Year%>
+                                    </p>
+                                </a>
+                                <% } %>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white m-3">
+            <div class="row m-3">
+                <a href="/Categories/Energy">
+                    <header class="p-1 titles">Energy (Trending)</header>
+                </a>
+                <div class="scroll">
+                    <div class="movies">
+                        <div class="row">
+                            <% for (var i=0;i<=16;i++) { %>
+                                <a href="/moviepage/<%= Sort_list4[i].Serial_No%>" class="col12">
+                                    <div id="img-container">
+                                        <img src="https://source.unsplash.com/random/'+width+'x'+height+'"
+                                            style="height: 100%; width:auto">
+                                    </div>
+                                    <p id="songname">
+                                        <%= Sort_list4[i].Song_Name%>
+                                    </p>
+                                    <p id="singername">
+                                        <%= Sort_list4[i].Singer_Name%>
+                                    </p>
+                                    <p id="type">
+                                        <%= Sort_list4[i].Type%>
+                                    </p>
+                                    <p id="year">
+                                        <%= Sort_list4[i].Year%>
+                                    </p>
+                                </a>
+                                <% } %>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-light m-3">
+            <div class="row m-3">
+                <a href="/Categories/Party">
+                    <header class="p-1 titles">Party (Trending)</header>
+                </a>
+                <div class="scroll">
+                    <div class="movies">
+                        <div class="row">
+                            <% for (var i=0;i<=16;i++) { %>
+                                <a href="/moviepage/<%= Sort_list5[i].Serial_No%>" class="col12">
+                                    <div id="img-container">
+                                        <img src="https://source.unsplash.com/random/'+width+'x'+height+'"
+                                            style="height: 100%; width:auto">
+                                    </div>
+                                    <p id="songname">
+                                        <%= Sort_list5[i].Song_Name%>
+                                    </p>
+                                    <p id="singername">
+                                        <%= Sort_list5[i].Singer_Name%>
+                                    </p>
+                                    <p id="type">
+                                        <%= Sort_list5[i].Type%>
+                                    </p>
+                                    <p id="year">
+                                        <%= Sort_list5[i].Year%>
+                                    </p>
+                                </a>
+                                <% } %>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white m-3">
+            <div class="row m-3">
+                <a href="/Categories/Sad">
+                    <header class="p-1 titles">Sad (Trending)</header>
+                </a>
+                <div class="scroll">
+                    <div class="movies">
+                        <div class="row">
+                            <% for (var i=0;i<=16;i++) { %>
+                                <a href="/moviepage/<%= Sort_list6[i].Serial_No%>" class="col12">
+                                    <div id="img-container">
+                                        <img src="https://source.unsplash.com/random/'+width+'x'+height+'"
+                                            style="height: 100%; width:auto">
+                                    </div>
+                                    <p id="songname">
+                                        <%= Sort_list6[i].Song_Name%>
+                                    </p>
+                                    <p id="singername">
+                                        <%= Sort_list6[i].Singer_Name%>
+                                    </p>
+                                    <p id="type">
+                                        <%= Sort_list6[i].Type%>
+                                    </p>
+                                    <p id="year">
+                                        <%= Sort_list6[i].Year%>
+                                    </p>
+                                </a>
+                                <% } %>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
