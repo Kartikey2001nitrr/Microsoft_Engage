@@ -3,7 +3,7 @@ Installations required to run my program
   a. Visual studio
   b. Node.js
   c. Express.js
-  d. Sheetjs
+  d. Sheet.js
   e. ejs.js
 
 Step to run my project
